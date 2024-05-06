@@ -13,10 +13,10 @@ class history{
 
     public function getWeatherByDate($date) {
         if (array_key_exists($date, $this->weatherData)) {
-            return $this->weatherData[$date]->getBeschreibung();
+            return $this->weatherData[$date];
         }
         else {
-            return "Keine Wetterdaten für dieses Datum vorhanden.";
+            return "Keine Wetterdaten vorhanden.";
         }
     }
 }
